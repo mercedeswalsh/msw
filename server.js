@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001
 
 const app = express()
 
-// middleware
+// * middleware *
 app.use(express.static(join(__dirname, 'client', 'build')))
 app.use(express.urlencoded({ extended: true}))
 app.use(express.json())
