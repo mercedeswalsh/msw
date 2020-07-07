@@ -5,7 +5,10 @@ import {
     Route
 } from 'react-router-dom'
 // ** imports **
-// 
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Projects from './pages/Projects'
 // mui theme
 import {
     createMuiTheme, ThemeProvider
@@ -47,7 +50,7 @@ function App() {
                 <Route exact path="/">
                     {/* initial page */}
                     {/* add navbar here */}
-                    {/* <Home /> */}
+                    <Home />
                 </Route>
             </Switch>
 
@@ -55,7 +58,7 @@ function App() {
                 <Route exact path="/about">
                     {/* about page */}
                     {/* add navbar here */}
-                    {/* <About /> */}
+                    <About />
                 </Route>
             </Switch>
 
@@ -63,7 +66,7 @@ function App() {
                 <Route exact path="/contact">
                     {/* contact page */}
                     {/* add navbar here */}
-                    {/* <Contact /> */}
+                    <Contact />
                 </Route>
             </Switch>
 
@@ -71,7 +74,7 @@ function App() {
                 <Route exact path="/projects">
                     {/* projects page */}
                     {/* add navbar here */}
-                    {/* <Projects /> */}
+                    <Projects />
                 </Route>
             </Switch>
 
