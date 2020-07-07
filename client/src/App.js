@@ -11,7 +11,8 @@ import Contact from './pages/Contact'
 import Projects from './pages/Projects'
 // mui theme
 import {
-    createMuiTheme, ThemeProvider
+    createMuiTheme, 
+    ThemeProvider
 } from '@material-ui/core/styles'
 import './App.css'
 
@@ -35,7 +36,8 @@ const theme = createMuiTheme({
           'Roboto',
           'Roboto Slab'
       ]
-  }
+  },
+  backgroundColor: '#fec0ce'
 })
 
 function App() {

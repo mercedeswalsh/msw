@@ -3,14 +3,16 @@ import React from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
+// ** imports **
+import Title from '../Title'
 
 const HomeGrid = () => {
     return (
         <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg">
-          <Typography component="div" style={{ backgroundColor: '', height: '100vh' }} />
-
+          {/* <Typography component="div" style={{ backgroundColor: '', height: '100vh' }} /> */}
+        <Title />
         </Container>
       </React.Fragment>       
     )
