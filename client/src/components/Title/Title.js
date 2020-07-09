@@ -9,10 +9,14 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     '& > *': {
       margin: theme.spacing(1),
-      width: theme.spacing(200),
+      width: theme.spacing(50),
       height: theme.spacing(5),
     },
     font: 'Roboto Slab',
+    alignItemsAndJustifyContent: {
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
   },
 }))
 
@@ -22,7 +26,7 @@ const Title = () => {
   return (
 
     <div className={classes.root}>
-      <Paper elevation={0}>
+      <Paper elevation={0} className={classes.alignItemsAndJustifyContent}>
           <Typography variant="h4" component="div" align="center">
             hi, i'm mercedes :-)
           </Typography>
