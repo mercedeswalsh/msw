@@ -34,7 +34,8 @@ const theme = createMuiTheme({
       // fontSize
       fontFamily: [
           'Roboto',
-          'Roboto Slab'
+          'Roboto Slab',
+          'Montserrat',
       ]
   },
   backgroundColor: '#fec0ce'

@@ -1,7 +1,8 @@
 import React from 'react'
-// imports
+// ** imports **
 import Nav from '../../components/Nav'
 import HomeGrid from '../../components/HomeGrid'
+import Footer from '../../components/Footer'
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
 
         <Nav />
         <HomeGrid />
-
+        <Footer />
 
         </>
     )

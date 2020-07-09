@@ -2,35 +2,39 @@ import React from 'react'
 // mui imports
 import { makeStyles } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import Typography from '@material-ui/core/Typography'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 // ** imports **
-import Title from '../Title'
+import Hi from '../Hi'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  control: {
-    padding: theme.spacing(2),
-  },
+  spaceFromTop: {
+    height: 15
+  }
 }))
 
 const HomeGrid = () => {
-  const [spacing, setSpacing] = React.useState(2)
   const classes = useStyles()
-
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  }
 
     return (
         <React.Fragment>
         <CssBaseline />
-        <Container maxWidth="lg">
-          {/* <Typography component="div" style={{ backgroundColor: '', height: '100vh' }} /> */}
-        <Title />
+        <Container maxWidth="lg" className={classes.root}>
+        <Grid container spacing={0}>
+          {/* row 1 */}
+          <Grid item xs={4}><div></div></Grid>
+          <Grid item xs={4} className={classes.spaceFromTop}></Grid>
+          <Grid item xs={4}><div></div></Grid>
+          {/* row 2 */}
+          <Grid item xs={2}></Grid>
+          <Grid item xs={8}>
+            <Hi />
+          </Grid>
+          <Grid item xs={2}></Grid>
+        </Grid>
         </Container>
       </React.Fragment>
     )
