@@ -32,7 +32,7 @@ const PhotoCard = () => {
             <CardMedia
             component="img"
             alt="san francisco swing"
-            height="200"
+            height="225"
             image={sfswing}
             title="san francisco swing"
             />

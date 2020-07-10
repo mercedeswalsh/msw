@@ -52,9 +52,9 @@ const Nav = () => {
             keepMounted
             open={Boolean(anchorEl)}
             onClose={handleClose}>
-                <MenuItem onClick={handleClose}><Link to='/About'></Link>About</MenuItem>
-                <MenuItem onClick={handleClose}><Link to='/Projects'></Link>Projects</MenuItem>
-                <MenuItem onClick={handleClose}><Link to='/Contact'></Link>Contact</MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/about'></Link>About</MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/projects'></Link>Projects</MenuItem>
+                <MenuItem onClick={handleClose}><Link to='/contact'></Link>Contact</MenuItem>
             </Menu>
             <Typography variant="h6" className={classes.title}>
             </Typography>

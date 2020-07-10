@@ -8,7 +8,7 @@ import CodeIcon from '@material-ui/icons/Code'
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        fontFamily: 'Montserrat',
+        font: 'Montserrat',
         color: '#3c3c3c'
     },
     // makes footer position stay at bottom

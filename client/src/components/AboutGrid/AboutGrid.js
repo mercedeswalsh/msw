@@ -5,8 +5,6 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 // ** imports **
-import Hi from '../Hi'
-import PhotoCard from '../PhotoCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,12 +30,12 @@ const AboutGrid = () => {
           {/* row 2 */}
           <Grid item xs={2}></Grid>
           <Grid item xs={8}>
-            <Hi />
+            {/* <Hi /> */}
           </Grid>
           <Grid item xs={2} className={classes.space}><div></div></Grid>
           {/* row 3 */}
           <Grid item xs={12}>
-            <PhotoCard />
+
           </Grid>
         </Grid>
         </Container>
