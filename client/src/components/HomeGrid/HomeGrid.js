@@ -6,12 +6,13 @@ import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 // ** imports **
 import Hi from '../Hi'
+import ObjectiveCard from '../ObjectiveCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  spaceFromTop: {
+  space: {
     height: 15
   }
 }))
@@ -26,14 +27,18 @@ const HomeGrid = () => {
         <Grid container spacing={0}>
           {/* row 1 */}
           <Grid item xs={4}><div></div></Grid>
-          <Grid item xs={4} className={classes.spaceFromTop}></Grid>
+          <Grid item xs={4} className={classes.space}><div></div></Grid>
           <Grid item xs={4}><div></div></Grid>
           {/* row 2 */}
           <Grid item xs={2}></Grid>
           <Grid item xs={8}>
             <Hi />
           </Grid>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2} className={classes.space}><div></div></Grid>
+          {/* row 3 */}
+          <Grid item xs={12}>
+            <ObjectiveCard />
+          </Grid>
         </Grid>
         </Container>
       </React.Fragment>
