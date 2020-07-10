@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 // ** imports **
 import Hi from '../Hi'
-import ObjectiveCard from '../ObjectiveCard'
+import PhotoCard from '../PhotoCard'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +37,7 @@ const HomeGrid = () => {
           <Grid item xs={2} className={classes.space}><div></div></Grid>
           {/* row 3 */}
           <Grid item xs={12}>
-            <ObjectiveCard />
+            <PhotoCard />
           </Grid>
         </Grid>
         </Container>

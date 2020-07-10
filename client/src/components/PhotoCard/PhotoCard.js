@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-const ObjectiveCard = () => {
+const PhotoCard = () => {
     const classes = useStyles()
     const theme = useTheme()
 
@@ -31,22 +31,14 @@ const ObjectiveCard = () => {
         <CardActionArea>
             <CardMedia
             component="img"
-            alt="Contemplative Reptile"
+            alt="san francisco swing"
             height="200"
             image={sfswing}
-            title="Contemplative Reptile"
+            title="san francisco swing"
             />
-            <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                    mercedessierra.io
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                bla bla bla
-                </Typography>
-            </CardContent>
         </CardActionArea>
       </Card>
     )
 }
 
-export default ObjectiveCard
+export default PhotoCard
