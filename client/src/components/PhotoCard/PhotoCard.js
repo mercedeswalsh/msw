@@ -7,7 +7,9 @@ import CardMedia from '@material-ui/core/CardMedia'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardActions from '@material-ui/core/CardActions'
 import Typography from '@material-ui/core/Typography'
+// image
 import sfswing from './images/sfswing.jpeg'
+import afterlight from './images/afterlight.jpg'
 
 const useStyles = makeStyles((theme) => ({
     root: {

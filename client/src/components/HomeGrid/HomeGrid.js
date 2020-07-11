@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid'
 // ** imports **
 import Hi from '../Hi'
 import PhotoCard from '../PhotoCard'
+import Objective from '../Objective'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,19 +26,23 @@ const HomeGrid = () => {
         <CssBaseline />
         <Container maxWidth="lg" className={classes.root}>
         <Grid container spacing={0}>
-          {/* row 1 */}
+          {/* empty row 1 */}
           <Grid item xs={4}><div></div></Grid>
           <Grid item xs={4} className={classes.space}><div></div></Grid>
           <Grid item xs={4}><div></div></Grid>
-          {/* row 2 */}
+          {/* row 2 (photo) */}
+          <Grid item xs={12}>
+            <PhotoCard /><br />
+          </Grid>
+          {/* row 3 (hi) */}
           <Grid item xs={2}></Grid>
           <Grid item xs={8}>
             <Hi />
           </Grid>
           <Grid item xs={2} className={classes.space}><div></div></Grid>
-          {/* row 3 */}
+          {/* row 4  (objective) */}
           <Grid item xs={12}>
-            <PhotoCard />
+            <Objective />
           </Grid>
         </Grid>
         </Container>
