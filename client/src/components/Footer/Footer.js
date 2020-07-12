@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         position: 'fixed',
         bottom: 0
+    },
+    label: {
+        fontFamily: 'Montserrat'
     }
   }))
 
@@ -33,7 +36,7 @@ const Footer = () => {
             showLabels
             className={classes.sticky}
             >
-                <BottomNavigationAction label="mercedessierra.io" icon={<CodeIcon />} color="secondary"/>
+                <BottomNavigationAction className={classes.label} label="mercedessierra.io" icon={<CodeIcon />} color="secondary"/>
             </BottomNavigation>
         </div>
     )

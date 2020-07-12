@@ -1,17 +1,12 @@
 
 import React from 'react'
 // mui imports
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
-import Fab from '@material-ui/core/Fab'
 import Button from '@material-ui/core/Button'
-import ButtonGroup from '@material-ui/core/ButtonGroup'
-import DeveloperModeIcon from '@material-ui/icons/DeveloperMode'
-import ContactMailIcon from '@material-ui/icons/ContactMail'
-import InfoIcon from '@material-ui/icons/Info'
 import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
@@ -24,18 +19,15 @@ const useStyles = makeStyles((theme) => ({
   },
   words: {
     fontFamily: 'Montserrat',
-    fontSize: '225%',
+    fontSize: '200%',
     textAlign: 'center'
   },
   button: {
-      color: theme.palette.secondary.light,
+      color: theme.palette.primary,
       textAlign: 'center',
       alignItems: 'center',
-      fontFamily: 'Montserrat:wght@600',
-      fontSize: '100%',
-      color: '#000',
-      flexDirection: 'row',
-      justify: 'space-evenly',
+      fontFamily: 'Montserrat',
+      fontSize: '90%',
       '& > *': {
         margin: theme.spacing(1),
       },
@@ -55,29 +47,15 @@ const Objective = () => {
       </CardContent>
       <CardActions className={classes.card}>
         <Grid container className={classes.root} spacing={8} align='center'>
-        <ButtonGroup variant="text" color="primary" aria-label="text primary button group" className={classes.button}>
         <Grid item xs={4} align='center'>
-            <Button 
-                className={classes.button}
-                startIcon={<DeveloperModeIcon />}>
-            projects
-            </Button>
+            <Button className={classes.button} variant='outlined' color='primary' size='small'>PROJECTS</Button>
         </Grid>
         <Grid item xs={4} align='center'>
-            <Button 
-                className={classes.button}
-                startIcon={<ContactMailIcon />}>
-            contact
-            </Button>
+            <Button className={classes.button} variant='outlined' color='primary' size='small'>CONTACT</Button>
         </Grid>
         <Grid item xs={4} align='center'>
-            <Button 
-                className={classes.button}
-                startIcon={<InfoIcon />}>
-            about me
-            </Button>
+            <Button className={classes.button} variant='outlined' color='primary' size='small'>ABOUT</Button>
         </Grid>
-        </ButtonGroup>
         </Grid>
       </CardActions>
     </Card>
