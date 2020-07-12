@@ -1,45 +1,43 @@
 import React from 'react'
 // mui imports
 import { makeStyles } from '@material-ui/core/styles'
-import BottomNavigation from '@material-ui/core/BottomNavigation'
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction'
+import AppBar from '@material-ui/core/AppBar'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
 import CodeIcon from '@material-ui/icons/Code'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        font: 'Montserrat',
-        color: '#3c3c3c'
-    },
-    // makes footer position stay at bottom
-    sticky: {
-        width: '100%',
-        position: 'fixed',
-        bottom: 0
-    },
-    label: {
-        fontFamily: 'Montserrat'
-    }
-  }))
+  root: {
+    flexGrow: 1
+  },
+  title: {
+    flexGrow: 1,
+    fontFamily: 'MontSerrat',
+    fontSize: '100%'
+  },
+  sticky: {
+    width: '100%',
+    position: 'fixed',
+    bottom: 0
+  }
+}))
 
 const Footer = () => {
-    const classes = useStyles()
-    const [value, setValue] = React.useState(0)
+  const classes = useStyles()
 
-    return (
-        <div className={classes.root}>
-            <BottomNavigation
-            value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue)
-            }}
-            showLabels
-            className={classes.sticky}
-            >
-                <BottomNavigationAction className={classes.label} label="mercedessierra.io" icon={<CodeIcon />} color="secondary"/>
-            </BottomNavigation>
-        </div>
-    )
+  return (
+    <div className={classes.root}>
+      <AppBar className={classes.sticky} position='static'>
+        <Toolbar>
+            <CodeIcon />
+          <Typography variant="h6" className={classes.title} align='center'>
+            mercedessierra.io
+          </Typography>
+          <CodeIcon />
+        </Toolbar>
+      </AppBar>
+    </div>
+  )
 }
 
 export default Footer
