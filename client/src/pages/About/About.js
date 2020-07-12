@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 const About = () => {
     return (
         <>
-
+        
         <Nav />
         <AboutGrid />
         <Footer />

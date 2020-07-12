@@ -20,6 +20,7 @@ const Hi = () => {
     const classes = useStyles()
     return (
         <div className={classes.root}>
+          
             <CypherText textList={["hi :)", "i'm mercedes"]} delay={2000}/>
 
         </div>

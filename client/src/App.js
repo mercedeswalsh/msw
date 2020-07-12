@@ -14,6 +14,7 @@ import {
     createMuiTheme, 
     ThemeProvider
 } from '@material-ui/core/styles'
+// css
 import './App.css'
 
 // theme
@@ -31,7 +32,6 @@ const theme = createMuiTheme({
       }
   },
   typography: {
-      // fontSize
       fontFamily: [
           'Roboto',
           'Roboto Slab',
@@ -52,7 +52,6 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     {/* initial page */}
-                    {/* add navbar here */}
                     <Home />
                 </Route>
             </Switch>
@@ -60,7 +59,6 @@ function App() {
             <Switch>
                 <Route exact path="/about">
                     {/* about page */}
-                    {/* add navbar here */}
                     <About />
                 </Route>
             </Switch>
@@ -68,7 +66,6 @@ function App() {
             <Switch>
                 <Route exact path="/contact">
                     {/* contact page */}
-                    {/* add navbar here */}
                     <Contact />
                 </Route>
             </Switch>
@@ -76,7 +73,6 @@ function App() {
             <Switch>
                 <Route exact path="/projects">
                     {/* projects page */}
-                    {/* add navbar here */}
                     <Projects />
                 </Route>
             </Switch>
