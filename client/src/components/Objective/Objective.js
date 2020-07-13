@@ -1,5 +1,7 @@
 
 import React from 'react'
+import { Link as RouterLink } from 'react-router-dom'
+import Link from '@material-ui/core/Link'
 // mui imports
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
@@ -48,13 +50,13 @@ const Objective = () => {
       <CardActions className={classes.card}>
         <Grid container className={classes.root} spacing={8} align='center'>
         <Grid item xs={4} align='center'>
-            <Button className={classes.button} variant='outlined' color='primary' size='small'>PROJECTS</Button>
+          <Link component={RouterLink} to="/projects"><Button className={classes.button} variant='outlined' color='primary' size='small'>PROJECTS</Button></Link >
         </Grid>
         <Grid item xs={4} align='center'>
-            <Button className={classes.button} variant='outlined' color='primary' size='small'>CONTACT</Button>
+          <Link component={RouterLink} to="/contact"><Button className={classes.button} variant='outlined' color='primary' size='small'>CONTACT</Button></Link >
         </Grid>
         <Grid item xs={4} align='center'>
-            <Button className={classes.button} variant='outlined' color='primary' size='small'>ABOUT</Button>
+          <Link component={RouterLink} to="/about"><Button className={classes.button} variant='outlined' color='primary' size='small'>ABOUT</Button></Link >
         </Grid>
         </Grid>
       </CardActions>
